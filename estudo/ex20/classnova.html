@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outras class no pseudo</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+        
+        a:hover{
+            color: rgb(219, 114, 114);
+            text-decoration: underline;
+        }
+        a:active{
+            color: blue;
+        }
+        a::before {
+            content: '[penis]';  
+        }
+
+        a::after {
+            content:'[link]';
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <ul>
+            <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf">
+                <li >canal github</li>
+            </a>
+            <a href="https://www.youtube.com/@cursoemvideo">
+                <li>canal youtube</li>
+            </a>
+            <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/">
+                <li>canal curso em video</li>
+        </a>
+    </ul>
+</body>
+</html>

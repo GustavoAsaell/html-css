@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tamanho</title>
+</head>
+<body>
+    <h1>veja o tamanho da imagem</h1>
+    <picture>
+            <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+                   <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+            <img src="imagens/g.png" alt="imagem flexivel">
+    </picture>
+    <h1>midia e audios</h1>
+    <p>primeiro jeito de fazer, mas nao e certeza que roda em todos os sites</p>
+    <audio src="midia/The Woods - Silent Partner.mp3" controls autoplay loop></audio>
+    <p>segundo jeito, mas esse tem certeza que vai rodar em todos os sites</p>
+    <audio controls loop>
+        <source src="midia/The Woods - Silent Partner.mp3" type="audio/mpeg">
+        <source src="midia/The woods - Silent Partner.mp3" type="audio/ogg">
+        <source src="midia/The woods - Silent partner.mp3" type="audio/wav">
+    </audio preload="metadata" autoplay>
+    <p>infelizmente ese site nao pode ter audio clique <a href="midia/The Woods - Silent Partner.mp3">aqui</a> para baixar o audio</p>
+</body>
+</html>

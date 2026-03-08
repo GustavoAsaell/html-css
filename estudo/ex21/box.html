@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+
+        h1{
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkkhaki;
+            background-color: darkgoldenrod;
+        }
+
+        a{
+            border-style: double;
+            border-color: black;
+            border-width: 10px ;
+        }
+        h1:hover{
+            color: blueviolet;
+            background-color: darkkhaki;
+        }
+        h1 > p{
+            display: none;
+        }
+        h1:hover > p{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>texto em forma de box-level <p>TEXTO ESCONDIDO...</p></h1>
+    <p>texto em forma de inline-level,veja esse link para <a href="#">entrar em outro site</a> onde  67 pessoas entrou</p>
+</body>
+</html>
