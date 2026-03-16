@@ -10,22 +10,21 @@
         }
 
         table {
+            height: 400px;
             width: 400px;
             border-collapse: collapse;
         }
 
-        .destaque {
-            background-color: darkgray;
-        }
-
         td {
             border:1px solid black;
-            
             padding: 10px;
+            text-align: center;
+            vertical-align: middle;
         }
 
-        .foco {
-            background-color: yellow;
+        .numero {
+            text-align: right;
+            vertical-align: bottom;
         }
 
     </style>
@@ -39,21 +38,26 @@
         <tr>
             <td>A1</td>
             <td>B1</td>
-            <td class="foco">C1</td>
+            <td>C1</td>
         </tr>
 
-        <tr class="destaque">
+        <tr>
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
 
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
 
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
     </table>
 </body>
 </html>
