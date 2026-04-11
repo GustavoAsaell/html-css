@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: 80px 40px 200px 40px;
+            grid-template-columns: 200px 150px;
+        }
+
+        #topo {
+            grid-area: 1 / 1 / 2 / -1;
+        }
+
+        #menu {
+            grid-area: 2 / 1 / 3 / -1;
+        }
+
+        #principal {
+           grid-area: 3 / 1 / 4 / -2;
+        }
+
+        #secundario {
+            grid-row: 4 / 5;
+            grid-column: 2 / 3;
+        }
+
+        #rodape {
+            grid-row: 5 / 6;
+            grid-column: 1 / 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        h
+    </div>
+</body>
+</html>
